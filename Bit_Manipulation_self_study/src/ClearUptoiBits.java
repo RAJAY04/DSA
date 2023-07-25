@@ -1,4 +1,5 @@
 public class ClearUptoiBits {
+    //this program may not be that usefull
     public static void main(String[] args) {
         int a = 31;
         int i = 4;
