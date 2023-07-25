@@ -1,4 +1,6 @@
 *.class
-out/
 target/
 build/
+.idea/
+.gitignore/
+.iml
