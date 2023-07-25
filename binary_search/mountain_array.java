@@ -10,15 +10,15 @@ public class mountain_array {
     }
 
     private static int ans(int[] arr) {
-        int s = 0;
-        int e = arr.length-1;
-        while(s< e){
-            int m = s +(e-s)/2;
-            if(arr[m]>arr[m+1]){
-                e=m;
-            }else{
-                s=m+1;
+        int start = 0;
+        int end = arr.length-1;
+        while( start < end ){
+            int mid = start + ( end - start)/2;
+            if( arr[mid] > arr[ mid +1]){
+                end = mid;
+            }else {
+                start = mid + 1;
             }
-        }return s;
+        }return start;
     }
 }
