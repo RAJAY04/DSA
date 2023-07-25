@@ -1,5 +1,3 @@
-*.class
-target/
-build/
+.gitignore/
 .idea/
-.iml
+.iml/
