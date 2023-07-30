@@ -27,14 +27,14 @@ public class SplitString {
         List<String> ans = new ArrayList<>();
         for (String i : words) {
             StringBuilder word = new StringBuilder();
-            for(char j : i.toCharArray()){
+            for (char j : i.toCharArray()) {
                 char currentChar = j;
                 if (currentChar == separator && j != 0) {
                     if (word.length() > 0) {
                         ans.add(word.toString());
                     }
                     word = new StringBuilder();
-                } else if (currentChar >= 'a' && currentChar <= 'z'|| currentChar!=separator) {
+                } else if (currentChar >= 'a' && currentChar <= 'z' || currentChar != separator) {
                     word.append(currentChar);
                 }
             }

@@ -16,10 +16,11 @@ public class LargestEleAfterMerge {
         //There is only one element in the final array, which is 11.
         // 
     }
+
     public static long maxArrayValue(int[] nums) {
-        if(nums.length==0)return 0;
-        if(nums.length==1)return nums[0];
-        int[] ans = new int [nums.length];
+        if (nums.length == 0) return 0;
+        if (nums.length == 1) return nums[0];
+        int[] ans = new int[nums.length];
         int n = nums.length;
         for (int i = 0; i < n - 1; i++) {
             if (nums[i] <= nums[i + 1]) {

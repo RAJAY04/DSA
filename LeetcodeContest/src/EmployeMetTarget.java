@@ -14,7 +14,18 @@ public class EmployeMetTarget {
 //                - Employee 4 worked for 4 hours and met the target.
 //                There are 3 employees who met the target.
     }
-    public static int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
+    //better to use bruteforce and run a single for loop to get O(N) complexity , as the array is not sorted
+    //else it would take bad complexity just to sort the array
+
+    public static int numberOfEmployeesWhoMetTarget(int[] hours, int target){
+        int count = 0;
+        for (int i = 0; i < hours.length; i++) {
+            if(hours[i]>=target){
+                count++;
+            }
+        }return count;
+    }
+    public static int numberOfEmployeesWhoMetTarget1(int[] hours, int target) {
         Arrays.sort(hours);//sort the array to use binary search
         int s = 0;
         int e = hours.length-1;
