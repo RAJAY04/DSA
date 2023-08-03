@@ -1,5 +1,5 @@
 
-public class Main {
+public class OOPS {
     public static void main(String[] args) {
         Student ajay = new Student();//Student() is a constructor
         //construction defines what happens when the object will be created
@@ -20,7 +20,14 @@ public class Main {
         System.out.println(kunal.rollNo);
         System.out.println(kunal.name);
         System.out.println(kunal.marks);
+
+
+        //passing a object inside constructor
+        Student random = new Student(kunal);
+        System.out.println(random.name);
         }
+
+
 }
     class Student{
         int rollNo = 38;//default value;
@@ -36,6 +43,14 @@ public class Main {
         //we need a way to add values of the above properties object by object
         //hence we need one word to access every object
 
+
+        //lets say we want to create another constructor that takes value from another object
+        Student(Student other){
+            this.name = other.name;//other will be replaced by the object we pass
+            this.rollNo = other.rollNo;
+            this.marks = other.marks;
+        }
+
         Student(){
             this.name="ajay";
             this.marks=10;
@@ -47,7 +62,7 @@ public class Main {
         //arguments or not it will call the constructor respectiveely this is called constructor overloading
         Student(int rollNo , float marks , String name){
 //            rollNo = rollNo;
-//            marks = marks;
+//            marks = marks;this keyword basically means what object you are reffering to
 //            name = name; this gives error when name is same hence we can use this keyword here
             this.rollNo = rollNo;
             this.marks = marks;
