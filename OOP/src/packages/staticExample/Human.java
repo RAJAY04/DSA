@@ -7,6 +7,13 @@ public class Human {
         boolean married;
 //        int population; if we dont declare this as static population will be different for all humans
     static int population;
+
+
+
+    static void message(){
+        System.out.println("hello world");
+        //System.out.println(this.name);you cant use this keyword inside any static method
+    }
 //when a member is declared as static it can be accessed before any of the objects are created and
     //without even refernecing to that object
     public Human(int age, String name, int salary, boolean married) {
@@ -23,11 +30,5 @@ public class Human {
         //searching in object propery first and then updating in class template
     }
 
-    static void fun(){//this is not dependent on objects
-        greeeting();//you cant use this becasue it requires an instance
-        //but the function you are using this in does not depend on instance
-    }
-    void greeeting(){//we know that something that is not static belongs to an object
 
-    }
 }
