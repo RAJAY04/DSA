@@ -1,7 +1,7 @@
 public class RotatedBsII {
     public static void main(String[] args) {
-        int[] nums = {3,1};
-        int target = 1;
+        int[] nums = {3,1};//[1,1,1,1,1,1,2,1,1,1,1] here we cant see if left part is less than mid
+        int target = 1;//hence make sure to take care of the duplicate elements
         System.out.println(search(nums,target));
     }
     public static boolean search(int[] nums, int target) {
@@ -30,7 +30,8 @@ public class RotatedBsII {
             }else{
                 return bs(nums,target,s,mid-1);
             }
-
+//Time Complexity: O(log n)
+//Space Complexity: O(log n)due to recursion
         }
     }
 
@@ -66,4 +67,6 @@ public class RotatedBsII {
         }
         return false;
     }
+    //note that in worst case it may take O(N) when [1,1,1,1,1,1,1,1]
+    //we modify the traditional binary search to solve the problem and its called augmented binary search
 }
