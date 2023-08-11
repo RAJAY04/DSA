@@ -1,6 +1,6 @@
 public class IsPrime_L {
     public static void main(String[] args) {
-        int num =20;
+        int num =3;
             boolean[] arr= new boolean[num+1];//note that boolean arr contains all false in the begining
             OptimisedIsPrime(num,arr);
         }
