@@ -25,6 +25,10 @@ public class BoxWeight extends Box {
         //        //but when the object is itself of type parent class, how will you call the constructor of child class
         //        //that is why gives error when we access weight
     }
+    public BoxWeight(double side , double weight) {
+        super(side);//this calls constructor in the parent class that takes one argument
+        this.weight= weight;
+    }
 
     public BoxWeight(double l, double h, double w, double weight) {
         //note that if we dont call super(l, h, w); then the default super clss constructor will be called
@@ -43,5 +47,7 @@ public class BoxWeight extends Box {
         //super can be used to access super class variables instead of this keyword
         //say we have variables names weight in both child and super class
         //when we use super.variable it is explicitely specifing to super class weight variable and not the subclass variable
+
+
     }
 }
