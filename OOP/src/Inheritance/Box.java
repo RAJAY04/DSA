@@ -5,6 +5,11 @@ public class Box {
     double h;
     double w;
 
+    static void greeting(){
+        //wkt that static methods dont depend on objects , hence by convention use class name to access them
+        System.out.println("Hey, i am in box class, greetings!");
+    }
+
     Box(){
         this.l = -1;
         this.w = -1;

@@ -6,6 +6,12 @@ public class BoxWeight extends Box {
     public BoxWeight(){
         this.weight = -1;
     }
+//@Override//we can see its not overriding
+    static void greeting(){
+        //wkt that static methods dont depend on objects , hence by convention use class name to access them
+        System.out.println("Hey, i am in BoxWeight class, greetings!");
+    }
+
 
     BoxWeight (BoxWeight other ){
         super(other);
