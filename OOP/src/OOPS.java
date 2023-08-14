@@ -2,12 +2,14 @@
 public class OOPS {
     public static void main(String[] args) {
         Student ajay = new Student();//Student() is a constructor
-        //construction defines what happens when the object will be created
-//        ajay.rollNo=41;
-//        ajay.name= "ajay";
-//        ajay.marks=10;
-        //if there are n objects then we need to initialise all the n objects and hence to avoid that
-        //we are doing that work inside a constructor which will do the work for all objects created
+        /*
+construction defines what happens when the object will be created
+        ajay.rollNo=41;
+        ajay.name= "ajay";
+        ajay.marks=10;
+if there are n objects then we need to initialise all the n objects and hence to avoid that
+we are doing that work inside a constructor which will do the work for all objects created
+*/
         System.out.println(ajay.rollNo);
         System.out.println(ajay.name);
         System.out.println(ajay.marks);
@@ -58,8 +60,10 @@ public class OOPS {
         void changeName(String newName){//this is a function
             name = newName;
         }
-        //we need a way to add values of the above properties object by object
-        //hence we need one word to access every object
+        /*
+        we need a way to add values of the above properties object by object
+        hence we need one word to access every object
+        */
 
 
         //lets say we want to create another constructor that takes value from another object
@@ -69,25 +73,23 @@ public class OOPS {
             this.marks = other.marks;
         }
 
-        //note: if we dont specify any constructor at all then java has a default constructor that sets
-        //the default value ,eg null
-
-//        Student(){//dosent take arguments and sets all values of objects created as defined below
-//            this.name="ajay";
-//            this.marks=10;
-//            this.rollNo=41;
-            //the this keyword is used for any object we create , eg if we create a object named ajay
-            //then the this is replaced by ajay and all the initialisation takes place
-
-        //we see that both the constructors have the same name hence depending on if you pass the
-        //arguments or not it will call the constructor respectively this is called constructor overloading
-
-
+        /*
+        note: if we dont specify any constructor at all then java has a default constructor that sets
+        the default value ,eg null
+                Student(){//dosent take arguments and sets all values of objects created as defined below
+                    this.name="ajay";
+                    this.marks=10;
+                    this.rollNo=41;
+        the this keyword is used for any object we create , eg if we create a object named ajay
+        then the this is replaced by ajay and all the initialisation takes place
+        we see that both the constructors have the same name hence depending on if you pass the
+        arguments or not it will call the constructor respectively this is called constructor overloading
+        */
 
 
         Student() {
             //internally its : Student( 0,100f,"Default");
-            this ( 0,100f,"Default");
+            this (0,100f,"Default");
         }//this means the constructor which is calling here , in this case
         //this is getting replaced with Student() with specified arguments
 
@@ -101,10 +103,12 @@ public class OOPS {
             this.rollNo = rollNo;
             this.marks = marks;
             this.name = name;
-            //this is the correct way of initialising objects , we can create as much objects we want
-            //by passing the arguments as specified int the constructor body
-//we can see that when we have changed the argument name slightly now it works
-//hence the conclusion is better use this keyword , as it work even if the name is same;
+            /*
+            this is the correct way of initialising objects , we can create as much objects we want
+            by passing the arguments as specified in the constructor body
+            we can see that when we have changed the argument name slightly now it works
+            hence the conclusion is better use this keyword , as it work even if the name is same;
+            */
         }
     }
 

@@ -27,8 +27,12 @@ public class WrapperClass_imp {
        final A kunal = new A("new object");
         System.out.println(kunal.name);
        kunal.name = " other name";
-//when a non primitive is final you cannot resign it , but you can change the value
-//       kunal = new A("new object");
+/*
+        when a non primitive is final you cannot resign it , but you can change the value
+        final basically means the reference to the object will always be pointing to it
+        but it is possible that the value of the object may be modified
+               kunal = new A("new object");
+        */
         System.out.println(kunal.name);
 
 

@@ -5,7 +5,7 @@ public class Main {
         //Box box = new Box(2,2,2);//search for a constructor that takes 3 arguments and initialise objects
         //Box box1 = new Box(box);//searches for a box that takes another box
 
-        //System.out.println(box1.l+" "+box1.h+" "+box1.w);//is l or any other variable was private
+        //System.out.println(box1.l+" "+box1.h+" "+box1.w);//if l or any other variable was private
         // then we could only access it in its folder
 
         //note that parent class cant access the members of the child class
