@@ -5,6 +5,7 @@ public class Daughter extends Parent{
     //be empty in the parent class
 
     public Daughter(int age) {
+        super(32);
         this.age = age;
     }
     @Override
