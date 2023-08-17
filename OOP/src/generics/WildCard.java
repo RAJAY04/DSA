@@ -10,7 +10,7 @@ public class WildCard<T extends Number> {
 
     public void get(List<? extends Number> list){//now we can pass numbers and its subclass
 // this is called wild card
-        // public void get(List<Number> list) here yoy can only pass Number type
+        // public void get(List<Number> list) here you can only pass Number type
 
     }
     //here T should either be of Number of subclass of NUmber type
