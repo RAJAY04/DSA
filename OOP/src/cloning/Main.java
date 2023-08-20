@@ -23,7 +23,10 @@ public class Main {
         System.out.println(Arrays.toString(twin.arr));
         twin.arr[0] = 200;
         System.out.println(Arrays.toString(ajay.arr));
+        System.out.println(Arrays.toString(twin.arr));
         //ajay arr also changed
+
+        //but when we made it as a deep copy twin changed but not ajay
 
 
     }
