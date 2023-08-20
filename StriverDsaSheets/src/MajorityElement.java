@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class MajorityElement {
+    //the question says that there exists a majority element and that occurs more than n/2 times
     public static void main(String[] args) {
        int[] nums = {2,2,1,1,1,2,2};
         //Output: 2
