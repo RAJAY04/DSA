@@ -10,11 +10,9 @@ public class Running_sum {
 
     private static int[] runningSum(int[] nums) {
         int n = nums.length;
-        int [] ans = new int[n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < i+1; j++) {
-                ans[i] += nums[j];
-            }
-        }return ans;
+        for (int i = 1; i < n ; i++) {
+            nums[i] = nums[i] + nums[i-1];
+        }return nums;
+        }
     }
-}
+

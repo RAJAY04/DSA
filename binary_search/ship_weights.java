@@ -1,32 +1,33 @@
 public class ship_weights {
     public static void main(String[] args) {
-         int[] weight = {1,2,3,4,5,6,7,8,9,10};
-         int days= 5;
-         System.out.println(shipWithinDays(weight,days));
+        int[] weight = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int days = 5;
+        System.out.println(shipWithinDays(weight, days));
     }
+
     public static int shipWithinDays(int[] weights, int days) {
-        int max_weight=0;
-        int total_weight=0;
-        for (int weight:weights) {
-            max_weight=Math.max(max_weight,weight);
-            total_weight+=weight;
+        int maxWeight = -1, totalWeight = 0;
+        for (int weight : weights) {
+            maxWeight = Math.max(maxWeight, weight);
+            totalWeight += weight;
         }
-        int s = max_weight, e=total_weight;
-        while(s<e){
-            int mid = s + ( e - s)/2;
-            int cur_days = 1, cur_weight=0;
-            for(int weight:weights){
-                if(cur_weight+weight>mid){
-                    cur_days++;
-                    cur_weight=0;
+        int left = maxWeight, right = totalWeight;
+        while (left < right) {
+            int mid = (left + right) / 2;
+            int daysNeeded = 1, currWeight = 0;
+            for (int weight : weights) {
+                if (currWeight + weight > mid) {
+                    daysNeeded++;
+                    currWeight = 0;
                 }
-                    cur_weight+=weight;
-            }if(cur_days<=days){
-                e=mid;
-            }else{
-                s=mid+1;
+                currWeight += weight;
+            }
+            if (daysNeeded > days) {
+                left = mid + 1;
+            } else {
+                right = mid;
             }
         }
-        return s;
+        return left;
     }
 }
