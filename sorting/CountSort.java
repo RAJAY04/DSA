@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class CountSort {
+    //its very fastest as it requires O(N + K) in all case but it needs auxiliary space of O(N+K)
     public static void main(String[] args) {
         int[] arr = {8,9,2,3,4,1,6,8,10,11,32,42,22,21,20};
         Csort(arr);
