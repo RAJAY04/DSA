@@ -24,7 +24,7 @@ public class BoxWeight extends Box {
         Box box5 = new BoxWeight(2,3,4,8);
                 System.out.println(box5.w); gives error
 
-                //there are many variables in bot child and parent classes
+                //there are many variables in both child and parent classes
                 //you are given access to the variables that are in the reference type i.e BoxWeight
                 //hence you should have access to weight variable
                 //this also means that ones you are trying to access should be initialised
