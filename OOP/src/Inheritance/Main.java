@@ -28,12 +28,12 @@ public class Main {
         //this also means that ones you are trying to access should be initialised
         //but when the object is itself of type parent class, how will you call the constructor of child class
         //that is why gives error
-//        BoxWeight box4 = new Box();
+        //BoxWeight box4 = new Box();
 //        System.out.println(box4);
 
 
         //multilevel inheritance
-        BoxWeight box = new BoxPrice(5,8,200);
+        BoxWeight box = new BoxPrice(5, 8, 200);
         //BoxPrice constructor is called that takes 3 args,then it will go above and above
 
         //Box.greeting();//static method being accessed
