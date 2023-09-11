@@ -49,7 +49,6 @@ public class Hashset {
             System.out.println(it.next());
             //we dont have to update the iterator as it automatically updates itself
         }
-
     }
 
 
