@@ -58,6 +58,60 @@ public class LinkedList {
 
     }
 
+    public int deleteFirst(){
+        int val = head.value;
+        head = head.next;
+        if(head == null){
+            tail = null;
+        }
+        size--;
+        return val;
+    }
+
+    public int deleteLast(){
+        if(size <= 1){
+            deleteFirst();
+        }
+        Node secondLast = get(size - 1);
+        int val = tail.value;
+        tail = secondLast;
+        tail.next = null;
+        return val;
+    }
+    //the below function gets the last index used for deletelast function
+    public Node get(int index){
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        return node;
+    }
+
+    public int delete(int index){
+        if(index == 0){
+            deleteFirst();
+        } else if (index == size - 1) {
+            deleteLast();
+        }
+
+        Node prev = get(index - 1);
+        int val = prev.next.value;
+
+        prev.next = prev.next.next;
+        return val;
+    }
+
+    //now we are given a index and we need to find its node
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+            if(node.value == value){
+                return node;
+            }
+            node = node.next;
+        }return null;//not found case
+    }
+
     private class Node{
         private int value;
         private Node next;

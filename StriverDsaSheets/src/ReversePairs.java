@@ -1,6 +1,7 @@
 public class ReversePairs {
     public static void main(String[] args) {
-        int[] nums = {2147483647,2147483647,2147483647,2147483647,2147483647,2147483647};
+//        int[] nums = {2147483647,2147483647,2147483647,2147483647,2147483647,2147483647};edge case if you dont use double
+        int[] nums = {40,23,19,12,9,6,2};
         System.out.println(reversePairs(nums));
     }
 

@@ -9,5 +9,14 @@ public class Main {
         list.insertLast(10);
         list.insert(3, 100);
         list.display();
+        System.out.println(list.deleteFirst());
+        list.display();
+        System.out.println(list.deleteLast());
+        list.display();
+        System.out.println(list.delete(2));
+        list.display();
+
+
+
     }
 }
