@@ -1,4 +1,5 @@
 public class MinimumOperationToReduceXToZero {
+    //this is a good problem recheck
     public static void main(String[] args) {
        int[] nums = {3,2,20,1,1,3};
        int x = 10;
