@@ -12,7 +12,7 @@ public class Main {
         //whose close we want to create
 
 
-//note that when u use clone as it throws something u need to specify that
+//note.txt that when u use clone as it throws something u need to specify that
         Human twin = (Human) ajay.clone();//Casting: The reason you're seeing (Human)
         // in front of ajay.clone() is because the clone() method returns an Object type,
         // not necessarily a Human type. The clone() method is declared in the Object class,

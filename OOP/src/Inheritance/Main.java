@@ -8,7 +8,7 @@ public class Main {
         //System.out.println(box1.l+" "+box1.h+" "+box1.w);//if l or any other variable was private
         // then we could only access it in its folder
 
-        //note that parent class cant access the members of the child class
+        //note.txt that parent class cant access the members of the child class
         //Box box3 = new BoxWeight();
         //it is the type of reference variable that determines what members can be accessed and
         //not the type of the object

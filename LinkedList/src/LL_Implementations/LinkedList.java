@@ -1,3 +1,5 @@
+package LL_Implementations;
+
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 public class LinkedList {
@@ -56,6 +58,21 @@ public class LinkedList {
         Node node = new Node(val,temp.next);
         temp.next = node;
 
+    }
+
+    //insert using recursion
+    public void insertRec(int value,int index){
+        head = insertRec(value,index,head);
+    }
+
+    private Node insertRec(int value,int index,Node node){
+        if(index == 0){
+            Node temp = new Node(value,node);
+            size++;
+            return temp;
+        }
+        node.next = insertRec(value,--index,node.next);
+        return node;
     }
 
     public int deleteFirst(){

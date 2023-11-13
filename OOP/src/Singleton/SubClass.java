@@ -18,7 +18,7 @@ public class SubClass extends A {
         we cant access num , but when the obj is of the type SubClass we can access it even though its outside
         the package and protected
 
-        note: we can access protected data in different package only when we are accessing it with a subclass ,
+        note.txt: we can access protected data in different package only when we are accessing it with a subclass ,
         not evn the class itself
 
         Because the class A does not know who is inheriting it but the SubClass knows about A , A does
@@ -42,7 +42,7 @@ public class SubClass extends A {
 
     class SubClass2 extends A{
         /*
-        note that SubClass has no idea about SubClass2 as it extends from A . when the time SubClass
+        note.txt that SubClass has no idea about SubClass2 as it extends from A . when the time SubClass
         will be executing , the SubClass2 may not even have been written and hence S2 will be confused
         who changed its internal members as both dont have idea about each other
         */

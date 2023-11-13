@@ -1,5 +1,5 @@
 package packages.staticExample;
-//note that classes outside the mainclass cannot be staticff
+//note.txt that classes outside the mainclass cannot be staticff
 public class InnerClass {
     static class test{
         String name;

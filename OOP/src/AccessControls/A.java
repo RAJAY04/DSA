@@ -10,7 +10,7 @@ public class A {
     public int getNum() {
         return num;
     }
-//note that the above and below functions are public so we can access them outside the class
+//note.txt that the above and below functions are public so we can access them outside the class
     public void setNum(int num) {
         this.num = num;
     }

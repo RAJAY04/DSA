@@ -26,7 +26,7 @@ public class Main {
         }catch(MyException e){
             throw new MyException("this is from MyException");
         }catch(Exception e){
-            //note that the Exception catches all type of exception hence if we use arithmatic exception
+            //note.txt that the Exception catches all type of exception hence if we use arithmatic exception
             //after the exception it gives an error as its a unreachable statement
         }finally {
             System.out.println("this will always execute");

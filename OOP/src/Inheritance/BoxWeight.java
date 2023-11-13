@@ -15,7 +15,7 @@ public class BoxWeight extends Box {
 
     BoxWeight (BoxWeight other ){
         super(other);
-        weight = other.weight;//note that the other that we are passing above is a BoxWeight type
+        weight = other.weight;//note.txt that the other that we are passing above is a BoxWeight type
         /*
         but the copy constructor that takes arguments is of the box type
         even though the other is BoxWeight type but the reference type is of box hence it will have access
@@ -39,7 +39,7 @@ public class BoxWeight extends Box {
     }
 
     public BoxWeight(double l, double h, double w, double weight) {
-        //note that if we dont call super(l, h, w); then the default super clss constructor will be called
+        //note.txt that if we dont call super(l, h, w); then the default super clss constructor will be called
 
 
          //even if any of the variable was private we can initialise but cant assess using . operator but we cant access

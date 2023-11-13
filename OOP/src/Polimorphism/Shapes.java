@@ -10,7 +10,7 @@ public class Shapes {
     //however since the final method cant be overridden , call can be resolved during compile time
     //itself and its called early binding
 
-    //note that if you declare a class as final , implicitly its methods will also be final
+    //note.txt that if you declare a class as final , implicitly its methods will also be final
 
     void area(){
         System.out.println("I am in shapes");

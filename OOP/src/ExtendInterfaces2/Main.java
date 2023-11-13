@@ -2,11 +2,11 @@ package ExtendInterfaces2;
 //ths is just to demonstrate the additional feature of an interface , the primary intent reamins as same
 //ie to use the feature of multiple inheritance to interfaces
 public class Main  implements A , B {
-    //note that we need to implement both the methods as B  is extending A
+    //note.txt that we need to implement both the methods as B  is extending A
 
     @Override
     public void greet() {
-//note that the access modifier for the overridden method should be same as the abstract metthod
+//note.txt that the access modifier for the overridden method should be same as the abstract metthod
         //declared or can be free than that , eg if method declared private , it can be proteced
         //if protected it can be public here , but vice versa is not acceptable
     }

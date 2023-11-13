@@ -1,3 +1,5 @@
+package LL_Implementations;
+
 public class CLL {
     private Node head;
     private Node tail;
@@ -37,14 +39,20 @@ public class CLL {
             return;
         }
         if(node.value == value){
-             head = head.next;
-             tail.next = head;
-             return;
+            head = head.next;
+            tail.next = head;
+            return;
         }
         do{
-
-        }
+            Node n = node.next;
+            if(n.value == value){
+                node.next = n.next;
+                break;
+            }
+            node = node.next;  // Add this line to move to the next node
+        }while(node.next != head);  // Modify the condition here
     }
+
     private class Node{
         int value;
         Node next;

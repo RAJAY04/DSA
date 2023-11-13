@@ -40,7 +40,7 @@ public class WrapperClass_imp {
         //finalizer
         A obj;
         //soo many objets are created and we know only one object and point 1 reference variable
-        for (int i = 0; i < 1000000; i++) {//note that for small number of objects it dosent destroy
+        for (int i = 0; i < 1000000; i++) {//note.txt that for small number of objects it dosent destroy
             obj = new A("i am a object");
         }
 

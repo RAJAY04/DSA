@@ -74,7 +74,7 @@ we are doing that work inside a constructor which will do the work for all objec
         }
 
         /*
-        note: if we dont specify any constructor at all then java has a default constructor that sets
+        note.txt: if we dont specify any constructor at all then java has a default constructor that sets
         the default value ,eg null
                 Student(){//dosent take arguments and sets all values of objects created as defined below
                     this.name="ajay";

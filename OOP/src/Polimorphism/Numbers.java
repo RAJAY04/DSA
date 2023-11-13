@@ -16,7 +16,7 @@ public class Numbers {
         obj.sum(3,4,4);
        // obj.sum(3,4,4,5);//this gives error because there is no method that
         //takes more than 3 arguments
-        //note that even though the memory allocations and stuffs are done during run time
+        //note.txt that even though the memory allocations and stuffs are done during run time
         //but which method to run and all is decided in compile time
     }
 }
