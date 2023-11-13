@@ -1,11 +1,13 @@
+package Kunals_Question_Video;
+
 /**
  * Definition for singly-linked list.
- * public class ListNode {
+ * public class Kunals_Question_Video.ListNode {
  *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ *     Kunals_Question_Video.ListNode next;
+ *     Kunals_Question_Video.ListNode() {}
+ *     Kunals_Question_Video.ListNode(int val) { this.val = val; }
+ *     Kunals_Question_Video.ListNode(int val, Kunals_Question_Video.ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {

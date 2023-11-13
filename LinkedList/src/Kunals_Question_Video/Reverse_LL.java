@@ -1,5 +1,6 @@
+package Kunals_Question_Video;
 
-   class ListNode {
+class ListNode {
       int val;
       ListNode next;
       ListNode() {}

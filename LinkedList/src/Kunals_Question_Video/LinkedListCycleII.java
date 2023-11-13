@@ -1,9 +1,11 @@
+package Kunals_Question_Video;
+
 /**
  * Definition for singly-linked list.
- * class ListNode {
+ * class Kunals_Question_Video.ListNode {
  *     int val;
- *     ListNode next;
- *     ListNode(int x) {
+ *     Kunals_Question_Video.ListNode next;
+ *     Kunals_Question_Video.ListNode(int x) {
  *         val = x;
  *         next = null;
  *     }

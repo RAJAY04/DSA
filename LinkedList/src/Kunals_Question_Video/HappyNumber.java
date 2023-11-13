@@ -1,3 +1,5 @@
+package Kunals_Question_Video;
+
 class Solution {
     public boolean isHappy(int n) {
         int fast = n , slow = n;
