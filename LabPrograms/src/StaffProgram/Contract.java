@@ -12,7 +12,7 @@ public class Contract extends Staff{
     // Display method
     @Override
     public void display() {
-        super.display();
+        super.display();//if there is no overriden method, we could use Classname.display() to call the method from the parent class
         System.out.println("Contract Period: " + period + " months");
         System.out.println("------------------------");
     }
