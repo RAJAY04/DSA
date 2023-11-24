@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-class RandomNumberGenerator implements Runnable {
+class RandomNumberGenerator extends Thread {
     public static int number = 0;
     private int iterations;
 
@@ -22,7 +22,7 @@ class RandomNumberGenerator implements Runnable {
     }
 }
 
-class SquarePrinter implements Runnable {
+class SquarePrinter extends Thread {
     private int iterations;
 
     public SquarePrinter(int iterations) {
@@ -41,7 +41,7 @@ class SquarePrinter implements Runnable {
     }
 }
 
-class CubePrinter implements Runnable {
+class CubePrinter extends Thread {
     private int iterations;
 
     public CubePrinter(int iterations) {
@@ -66,9 +66,9 @@ public class MultiThreadedApp {
         System.out.print("Enter the number of iterations: ");
         int iterations = scanner.nextInt();
 
-        Thread t1 = new Thread(new RandomNumberGenerator(iterations));
-        Thread t2 = new Thread(new SquarePrinter(iterations));
-        Thread t3 = new Thread(new CubePrinter(iterations));
+        RandomNumberGenerator t1 = new RandomNumberGenerator(iterations);
+        SquarePrinter t2 = new SquarePrinter(iterations);
+        CubePrinter t3 = new CubePrinter(iterations);
 
         t1.start();
         t2.start();

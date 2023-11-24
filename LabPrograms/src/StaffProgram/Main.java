@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Create at least 3 objects for each category
+        // Create arrays for at least 3 objects for each category
         Teaching[] teachingStaff = new Teaching[3];
         Technical[] technicalStaff = new Technical[3];
         Contract[] contractStaff = new Contract[3];
 
+        // Input details for Teaching staff
         for (int i = 0; i < 3; i++) {
-            // Input details for Teaching staff
             System.out.println("Enter details for Teaching Staff " + (i + 1) + ":");
             System.out.print("Staff ID: ");
             String staffId = scanner.next();
@@ -28,32 +28,36 @@ public class Main {
             String publications = scanner.next();
 
             teachingStaff[i] = new Teaching(staffId, name, phone, salary, domain, publications);
+        }
 
-            // Input details for Technical staff
+        // Input details for Technical staff
+        for (int i = 0; i < 3; i++) {
             System.out.println("Enter details for Technical Staff " + (i + 1) + ":");
             System.out.print("Staff ID: ");
-            staffId = scanner.next();
+            String staffId = scanner.next();
             System.out.print("Name: ");
-            name = scanner.next();
+            String name = scanner.next();
             System.out.print("Phone: ");
-            phone = scanner.next();
+            String phone = scanner.next();
             System.out.print("Salary: $");
-            salary = scanner.nextDouble();
+            double salary = scanner.nextDouble();
             System.out.print("Skills: ");
             String skills = scanner.next();
 
             technicalStaff[i] = new Technical(staffId, name, phone, salary, skills);
+        }
 
-            // Input details for Contract staff
+        // Input details for Contract staff
+        for (int i = 0; i < 3; i++) {
             System.out.println("Enter details for Contract Staff " + (i + 1) + ":");
             System.out.print("Staff ID: ");
-            staffId = scanner.next();
+            String staffId = scanner.next();
             System.out.print("Name: ");
-            name = scanner.next();
+            String name = scanner.next();
             System.out.print("Phone: ");
-            phone = scanner.next();
+            String phone = scanner.next();
             System.out.print("Salary: $");
-            salary = scanner.nextDouble();
+            double salary = scanner.nextDouble();
             System.out.print("Contract Period (months): ");
             int period = scanner.nextInt();
 
@@ -61,19 +65,16 @@ public class Main {
         }
 
         // Display details of all staff members
-        System.out.println("Teaching Staff Details:");
-        for (Teaching teaching : teachingStaff) {
-            teaching.display();
-        }
+        displayStaffDetails("Teaching Staff Details:", teachingStaff);
+        displayStaffDetails("Technical Staff Details:", technicalStaff);
+        displayStaffDetails("Contract Staff Details:", contractStaff);
+    }
 
-        System.out.println("Technical Staff Details:");
-        for (Technical technical : technicalStaff) {
-            technical.display();
+    private static void displayStaffDetails(String title, Staff[] staffArray) {
+        System.out.println(title);
+        for (Staff staff : staffArray) {
+            staff.display();
         }
-
-        System.out.println("Contract Staff Details:");
-        for (Contract contract : contractStaff) {
-            contract.display();
-        }
+        System.out.println();
     }
 }

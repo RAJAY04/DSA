@@ -6,7 +6,7 @@ import java.awt.event.ActionListener; // Import classes for handling action even
 public class Swing1 extends JFrame { // Define a class named Swing1 that extends JFrame
 
     // Declare static variables for text fields and JFrame
-    static private JTextField textField1, textField2, textField3;
+    static JTextField textField1, textField2, textField3;
     static JFrame frame = new JFrame("Button and TextBox Example");
 
     public static void main(String[] args) { // Main method
