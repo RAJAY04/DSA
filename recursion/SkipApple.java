@@ -1,4 +1,4 @@
-package src;
+
 
 public class SkipApple {
     public static void main(String[] args) {
